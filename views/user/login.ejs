@@ -1,0 +1,29 @@
+<%- include('../partials/header') -%>
+<%- include('../partials/navbar') -%>
+<div class="login">
+     
+     
+            <h1  >Login </h1>
+            
+       
+            <%- include('../partials/flashMessages') -%>      
+
+            <form  action="/users/login" method="post">
+               
+                    <p>Email</p>
+                    <input type="text" name="email" placeholder="User Name"   >
+              
+                 
+                    <p >Password</p>
+                    <input type="password" name="password"placeholder="Password"   >
+ 
+ <br><br>
+                 
+                        <button type="submit" class="btn btn-primary"> Login</button>
+                     
+            </form>
+            
+        </div>
+
+  
+<%- include('../partials/footer') -%>
